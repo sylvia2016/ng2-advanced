@@ -10,7 +10,8 @@ import { FlotComponent } from './flot/flot.component';
     ChartsRoutingModule
   ],
   declarations: [
+    //現在這個module要的只是flot componet宣告而已
     FlotComponent
   ]
 })
-export class ChartsModule { }
+export class ChartsModule { } //loadchildren放的是module

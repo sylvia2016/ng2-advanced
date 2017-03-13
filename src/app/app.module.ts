@@ -11,6 +11,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardsComponent } from './cards/cards.component';
 
 import { ChartsModule } from './charts/charts.module';
+import { Layout1Component } from './layout/layout1/layout1.component';
+import { Layout2Component } from './layout/layout2/layout2.component';
+import { LayoutModule } from './layout/layout.module';
 
 
 @NgModule({
@@ -19,14 +22,18 @@ import { ChartsModule } from './charts/charts.module';
     Page1Component,
     Page2Component,
     DashboardComponent,
-    CardsComponent
+    CardsComponent,
+    Layout1Component,
+    Layout2Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    ChartsModule,
-    AppRoutingModule
+    HttpModule,    
+    AppRoutingModule,
+    //ChartsModule,  //是只有用C這邊才可以不import對吧?
+    //已經放在layoutModule, 這裡完全不用他
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
